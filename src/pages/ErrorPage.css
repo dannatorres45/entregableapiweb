@@ -1,0 +1,53 @@
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 480px;
+}
+
+.error-glitch {
+  font-family: 'Poppins', sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+  color: #e75480;
+  line-height: 1;
+}
+
+.error-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3a2030;
+  margin: 0.8rem 0 0.6rem;
+}
+
+.error-body {
+  font-family: 'Poppins', sans-serif;
+  color: #b07090;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.error-home-btn {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  background: #e75480;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.error-home-btn:hover {
+  background: #c0406a;
+  transform: translateY(-2px);
+}

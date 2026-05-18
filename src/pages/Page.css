@@ -1,0 +1,38 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.page-header {
+  margin-bottom: 1.8rem;
+}
+
+.page-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a2030;
+  margin: 0 0 0.3rem;
+}
+
+.page-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  color: #b07090;
+  margin: 0;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  background: #fff5f5;
+  border: 1px solid #ffc0c0;
+  border-radius: 10px;
+  color: #c05050;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  margin: 1.5rem 0;
+}

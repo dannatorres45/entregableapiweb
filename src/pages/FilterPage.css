@@ -1,0 +1,56 @@
+.species-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.species-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.1rem;
+  background: #ffffff;
+  border: 1px solid #f5b8cc;
+  border-radius: 50px;
+  color: #7a4a60;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.species-btn:hover {
+  border-color: #e75480;
+  color: #e75480;
+  background: #fff0f5;
+}
+
+.species-btn.active {
+  background: #e75480;
+  border-color: #e75480;
+  color: #ffffff;
+}
+
+.species-emoji {
+  font-size: 1rem;
+}
+
+.filter-results-header {
+  margin-bottom: 1.2rem;
+}
+
+.results-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #3a2030;
+  font-weight: 600;
+}
+
+.results-count {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  color: #b07090;
+  font-weight: 400;
+}

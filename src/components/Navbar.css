@@ -1,0 +1,108 @@
+.navbar {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 2rem;
+  background: #ffffff;
+  border-bottom: 2px solid #f5b8cc;
+  box-shadow: 0 2px 8px rgba(231, 84, 128, 0.1);
+}
+
+.navbar-brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #e75480;
+}
+
+.brand-rick  { color: #e75480; }
+.brand-and   { color: #b07090; font-weight: 400; }
+.brand-morty { color: #c0406a; }
+.brand-sub   { display: none; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #7a4a60;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #e75480;
+  background: #fff0f5;
+  border-color: #f5b8cc;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 200;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #e75480;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 640px) {
+  .hamburger { display: flex; }
+
+  .nav-links {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+    border-bottom: 2px solid #f5b8cc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    pointer-events: none;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+    padding: 1.2rem 1rem;
+    pointer-events: all;
+  }
+
+  .nav-link { width: 100%; text-align: center; padding: 0.6rem 1rem; }
+}

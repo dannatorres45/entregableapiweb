@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pink: #e75480;
+  --pink-light: #f9c4d4;
+  --pink-bg: #fff0f5;
+  --pink-border: #f5b8cc;
+  --text-dark: #3a2030;
+  --text-mid: #7a4a60;
+  --text-light: #b07090;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdf3f7;
+  color: var(--text-dark);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #fdf3f7; }
+::-webkit-scrollbar-thumb { background: var(--pink-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--pink); }
